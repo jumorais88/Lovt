@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
 
-{box-sizing:border-box};
+*{
+	box-sizing:border-box;
+}
+
 body{
-	padding: 0;
+	padding:0;
 	margin:0;
 	font-family: "Ropa-sans", sans serif;
 }
@@ -13,14 +17,14 @@ header{
 }
 
 .container{
-	width: 608px;
+	width: 1000px;
 	max-width: 100%;
 	margin:0 auto;
 }
 
 header .slogan h1{
-	font-size: 30px;
-	font-weight: 300px;
+	font-size: 42px;
+	font-weight: 300;
 	height: 100%;
 	margin:0;
 	display: inline-block;
@@ -29,8 +33,8 @@ header .slogan h1{
 }
 
 header .slogan h2{
-	font-size: 10px;
-	font-weight: 400px;
+	font-size: 16px;
+	font-weight: 300;
 	height: 100%;
 	margin:0;
 	display: inline-block;
@@ -38,7 +42,7 @@ header .slogan h2{
 	
 }
 
-header button{
+button{
 	background-color: transparent;
 	color:#AAAAAA;
 	border:none;
@@ -47,15 +51,37 @@ header button{
 	margin-right:5px;
 }
 
-section .banner .carousel{
+.banner .carousel img{
+	width: 100%;
+}
+.banner .carousel{
+	margin: 50px 0;
+	position: relative;
+}
+
+.banner .carousel .controls{
 	position:absolute;
 	top:0;
-	left:0;
-	width:100%;
+	left: 0;
+	width: 100%;
 	height: 100%;
 
 }
 
+.banner .carousel .controls button{
+	background-color: rgba(170,170,170,0.8);
+	border: none;
+	padding: 10px;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	margin: 20px;
+	cursor: pointer;
+}
+
+.banner .carousel .controls button img {
+	width: 20px;
+}
 section .lofts article{
 	width:350px;
 	background-color:#EEEEEE;
@@ -114,5 +140,7 @@ footer .social-media ul{
 
 footer .social-media ul li img{
 	width: 30px;
-	margin:10px 10px 10px 0
+	margin:10px 10px 10px 0;
+	display: inline-block	
+
 }
