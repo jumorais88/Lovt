@@ -22,6 +22,16 @@ header{
 	margin:0 auto;
 }
 
+header button{
+	background-color:  transparent;
+	color:#aaaaaa;
+	border:none;
+	font-size: 35px;
+	cursor:pointer;
+	margin-right: 5px;
+
+}
+
 header .slogan h1{
 	font-size: 42px;
 	font-weight: 300;
@@ -82,12 +92,17 @@ button{
 .banner .carousel .controls button img {
 	width: 20px;
 }
-section .lofts article{
+
+/* FIM DA HEADER */
+
+
+/* ÍNICIO LOFTS */
+.lofts article{
 	width:350px;
 	background-color:#EEEEEE;
 }
 
-section .lofts article .thumb{
+.lofts article .thumb{
 	width:100%;
 	height:200px;
 	background-size: cover;
@@ -95,7 +110,73 @@ section .lofts article .thumb{
 	background-position: center;
 }
 
-/* footer */
+.lofts article .infos{
+	padding: 15px; /* distancia da borda */
+}
+
+.lofts article .price{
+	font-size:30px;
+	color: #888888;
+	font-weight: 400;
+	margin: 5px 0;
+}
+
+.lofts article .tag{
+	text-transform: uppercase;
+	padding:3px 15px;
+	background-color: #888;
+	color: #fff;
+	font-size: 25px;
+	border-radius: 30px;
+}
+
+.lofts article .tag.tag-new{
+	background-color: #51d275;
+}
+
+.lofts article .tag.tag-sale{
+	background-color: #dc9730
+}
+
+/* INÍCIO STYLES */
+
+.styles{
+	padding:50px 0;
+}
+
+.styles h2{
+	font-size: 35px;
+	font-weight: 400;
+	color:#888888;
+	text-align:center;
+}
+
+.styles article{
+	width: 100%;
+	padding:50px 25px;
+	background-color: #888;
+	margin:30px 0;
+	border-radius:10px;
+	background-size: cover;
+	background-position: center;
+	position:relative;
+}
+
+.styles article h3{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	margin:0;
+	color:#fff;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+	font-size:25px;
+	font-weight:400;
+
+	background-color: rgba(196,196,196,0.5);
+	top:0;
+	left:0;
+	}
+
 
 section.form h1{
 	text-align:center;
@@ -115,18 +196,26 @@ form input:not([type="checkbox"]){
 	margin-bottom: 15px;
 }
 
+
+/* INÍCIO FOOTER */
 footer{
 	background-color: black;
 	color:#fff;
 	padding:50px 0;
+	display:block
 }
-
+footer .container {
+}
 
 footer .container .map iframe{
 	height: 300px;
 	border-radius: 10px;
+
 }
 
+footer a{
+	color:#fff;
+}
 
 footer .info{
 	color: #EEEEEE;
@@ -135,12 +224,17 @@ footer .info{
 
 footer .social-media ul{
 	display:flex;
- 	padding:0	
+ 	padding:0;	
+	list-style:none
 }
 
 footer .social-media ul li img{
 	width: 30px;
 	margin:10px 10px 10px 0;
-	display: inline-block	
+}
 
+@media (max-width: 769px){
+	footer .container{
+
+	}
 }
